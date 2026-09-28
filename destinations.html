@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destinations | Skardu Traveller and Tours</title>
+<meta name="description" content="Lakes, deserts, forts and high plains around Skardu, sorted by the kind of trip you want.">
+<meta property="og:title" content="Destinations | Skardu Traveller and Tours">
+<meta property="og:description" content="Lakes, deserts, forts and high plains around Skardu, sorted by the kind of trip you want.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1672652787237-20f1cf66624e?auto=format&fit=crop&w=1200&q=70">
+<meta name="theme-color" content="#0E2F3D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Figtree:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M3 34 L15 12 L22 23 L27 16 L37 34 Z' fill='%230E2F3D'/%3E%3Cpath d='M11.5 18.5 L15 12 L18.5 18 Z' fill='%23F2A541'/%3E%3C/svg%3E">
+</head>
+<body data-page="destinations">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+<section class="page-hero">
+<div class="bg" data-bg="https://images.unsplash.com/photo-1672652787237-20f1cf66624e?auto=format&fit=crop&w=2000&q=70" aria-hidden="true"></div>
+<div class="wrap"><h1 class="reveal">Where do you want to wake up?</h1><p class="lead reveal" style="--d:150ms">Thirteen places we love, from quiet lakes to royal forts. Filter by mood, then tap any place for the details.</p></div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="track"><span>Upper Kachura</span><span>✦</span><span>Deosai Plains</span><span>✦</span><span>Shigar Fort</span><span>✦</span><span>Katpana Desert</span><span>✦</span><span>Khaplu Palace</span><span>✦</span><span>Sheosar Lake</span><span>✦</span><span>Manthokha</span><span>✦</span><span>Road to K2</span><span>✦</span><span>Upper Kachura</span><span>✦</span><span>Deosai Plains</span><span>✦</span><span>Shigar Fort</span><span>✦</span><span>Katpana Desert</span><span>✦</span><span>Khaplu Palace</span><span>✦</span><span>Sheosar Lake</span><span>✦</span><span>Manthokha</span><span>✦</span><span>Road to K2</span><span>✦</span></div></div>
+
+<section class="section ring-section">
+<div class="wrap">
+<div class="section-head">
+<div><p class="kicker reveal">Spin the valley</p><h2 class="reveal" style="--d:100ms">Grab it. Turn it. Pick a place.</h2></div>
+<p class="lead reveal right">Drag the ring to spin through all 13 destinations. Tap the one in front to open it.</p>
+</div>
+</div>
+<div class="ring-stage reveal zoom" id="ring-stage" tabindex="0" aria-label="Carousel of destinations. Use left and right arrow keys to turn.">
+<div class="ring"></div>
+<div class="ring-floor" aria-hidden="true"></div>
+</div>
+<div class="ring-controls">
+<button class="round-btn" type="button" id="ring-prev" aria-label="Previous destination">&#8592;</button>
+<div class="ring-name" id="ring-name" aria-live="polite"></div>
+<button class="round-btn" type="button" id="ring-next" aria-label="Next destination">&#8594;</button>
+</div>
+<div style="height:80px"></div>
+</section>
+<section class="section" id="explore">
+<div class="wrap">
+<div class="chips reveal" id="mood-chips" role="group" aria-label="Choose a mood"></div>
+<p class="mood-line" id="mood-line"></p>
+<div class="grid" id="place-grid" style="margin-top:28px"></div>
+</div>
+</section>
+<section class="section tinted">
+<div class="wrap split">
+<div>
+<p class="kicker reveal">Can't decide?</p>
+<h2 class="reveal" style="--d:100ms">Let three questions choose for you.</h2>
+<p class="lead reveal" style="margin-top:18px;--d:200ms">Answer honestly. We'll match you with the corner of Skardu that suits you best.</p>
+</div>
+<div class="quiz reveal zoom" id="quiz"></div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="section-head"><div><p class="kicker reveal">Gallery</p><h2 class="reveal" style="--d:100ms">See it before you go.</h2></div></div>
+<div class="gallery" id="gallery"></div>
+</div>
+</section>
+<section class="cta">
+<div class="bg" data-bg="https://images.unsplash.com/photo-1626440869686-44cbed01f694?auto=format&fit=crop&w=2000&q=70" data-parallax="0.15" aria-hidden="true"></div>
+<div class="wrap"><h2 class="reveal left">Found somewhere you like?</h2><a class="btn btn-primary reveal right" href="plan.html">Add it to a trip plan</a></div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

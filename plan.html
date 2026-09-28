@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan a trip | Skardu Traveller and Tours</title>
+<meta name="description" content="Sketch your Skardu trip in a minute and send it straight to us on WhatsApp or email.">
+<meta property="og:title" content="Plan a trip | Skardu Traveller and Tours">
+<meta property="og:description" content="Sketch your Skardu trip in a minute and send it straight to us on WhatsApp or email.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1695724426547-c695ce34c358?auto=format&fit=crop&w=1200&q=70">
+<meta name="theme-color" content="#0E2F3D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Figtree:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M3 34 L15 12 L22 23 L27 16 L37 34 Z' fill='%230E2F3D'/%3E%3Cpath d='M11.5 18.5 L15 12 L18.5 18 Z' fill='%23F2A541'/%3E%3C/svg%3E">
+</head>
+<body data-page="plan">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+<section class="page-hero">
+<div class="bg" data-bg="https://images.unsplash.com/photo-1695724426547-c695ce34c358?auto=format&fit=crop&w=2000&q=70" aria-hidden="true"></div>
+<div class="wrap"><h1 class="reveal">Sketch your trip.</h1><p class="lead reveal" style="--d:150ms">Play with the details. Your plan builds itself as you go, then send it to us in one tap.</p></div>
+</section>
+
+<section class="section">
+<div class="wrap planner-layout">
+<form class="panel reveal" id="planner" novalidate>
+<div class="stepper">
+<span class="label">Travellers</span>
+<div class="controls">
+<button class="round-btn" type="button" data-step="travellers:-1" aria-label="Fewer travellers">−</button>
+<output id="out-travellers" aria-live="polite">2</output>
+<button class="round-btn" type="button" data-step="travellers:1" aria-label="More travellers">+</button>
+</div>
+</div>
+<div class="stepper" style="margin-bottom:22px;border-bottom:0">
+<span class="label">Days</span>
+<div class="controls">
+<button class="round-btn" type="button" data-step="days:-1" aria-label="Fewer days">−</button>
+<output id="out-days" aria-live="polite">5</output>
+<button class="round-btn" type="button" data-step="days:1" aria-label="More days">+</button>
+</div>
+</div>
+<fieldset class="field">
+<legend>Travel style</legend>
+<div class="checks">
+<label class="check"><input type="radio" name="style" value="Budget"><span>Budget</span></label>
+<label class="check"><input type="radio" name="style" value="Comfort" checked><span>Comfort</span></label>
+<label class="check"><input type="radio" name="style" value="Luxury"><span>Luxury</span></label>
+</div>
+</fieldset>
+<div class="row-2">
+<div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="e.g. Ayesha Khan"><span class="error">Please add your name so we know who to reply to.</span></div>
+<div class="field"><label for="f-date">Start date</label><input id="f-date" name="date" type="date"><span class="hint">Leave empty if you're flexible.</span></div>
+</div>
+<div class="field"><label for="tour-select">Interested in a tour?</label><select id="tour-select" name="tour"></select></div>
+<fieldset class="field"><legend>Places you'd like to see</legend><div class="checks" id="place-checks"></div></fieldset>
+<div class="field"><label for="f-notes">Anything else?</label><textarea id="f-notes" name="notes" placeholder="Kids' ages, where you're travelling from, special occasions…"></textarea></div>
+</form>
+<aside class="summary reveal right" aria-label="Your trip summary">
+<div class="summary-card">
+<div class="photo" id="sum-photo" aria-hidden="true"></div>
+<p class="kicker">Your sketch</p>
+<h3>Trip to Skardu</h3>
+<ul class="summary-list">
+<li><span>Group</span><span id="sum-group"></span></li>
+<li><span>Length</span><span id="sum-days"></span></li>
+<li><span>Style</span><span id="sum-style"></span></li>
+<li><span>Starting</span><span id="sum-date"></span></li>
+<li><span>Places</span><span id="sum-places"></span></li>
+</ul>
+<p class="summary-idea" id="sum-idea" aria-live="polite"></p>
+<button class="btn btn-primary" type="button" id="send-wa">Send plan on WhatsApp</button>
+<button class="btn btn-ghost" type="button" id="send-mail" style="color:#fff">Send plan by email</button>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
